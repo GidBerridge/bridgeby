@@ -25,21 +25,27 @@
               <p>Bridgeby Tradings Ltd is currently seeking suppliers of</p>
               <ul>
                 <li>Musical instruments and accessories</li>
-                <li></li>
               </ul>
             </div>
           </div>
           <hr class="divider" />
-          <div style="text-align: center;">
-              <address> 
-                  <a href="mailto:info@bridgebytradings.co.uk" class="contact">Contact
-                      <img src="./assets/email.png" class="email-icon">
-                  </a>
-              </address>
-          </div>
         </div>
       </div>
-  </div>
+      <footer>
+        <div style="text-align: center;">
+            <address> 
+                <a href="mailto:info@bridgebytradings.co.uk" class="contact">
+                  <p>Contact</p>
+                    <div class="email-link">
+                      <img src="./assets/email.png" class="email-icon">
+                      <div> info@bridgebytradings.co.uk</div>
+                    </div>
+                </a>
+            </address>
+        </div>
+      </footer>
+      
+    </div>
   </div>
 </template>
 
@@ -68,12 +74,19 @@ header {
   color: #000;
 }
 
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 20px;
+}
+
 .container{
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  height: calc(100% - 120px);
+  height: calc(100vh - 120px);
   width: 90%;
   margin: 0 auto;
 }
@@ -134,15 +147,21 @@ header {
 
 }
 
-.email-icon {
+.email-link {
   width: 50px;
   height: 50px;
-  display: block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   filter:invert(100%);
   margin: 0.75rem auto;
   transition: scale 0.3s ease;
+  color: #000;
   }
-.email-icon:hover {
+.email-icon {
+    margin: 0 0.5rem;
+  }
+.email-link:hover {
     scale: 1.3;
   }
 
@@ -156,6 +175,13 @@ header {
   }
   .title {
     flex-direction: column;
+  }
+  .container{
+    height: calc(100% - 120px);
+  }
+  .email-link{
+    flex-direction: column;
+    margin-bottom: 3rem;
   }
 }
 </style>
