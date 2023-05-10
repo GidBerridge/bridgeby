@@ -35,7 +35,7 @@
         <div style="text-align: center;">
             <address> 
                 <a href="mailto:info@bridgebytradings.co.uk" class="contact">
-                  <p>Contact</p>
+                  <p>Contact Bridgeby Tradings Ltd</p>
                     <div class="email-link">
                       <img src="./assets/email.png" class="email-icon">
                       <!-- <div> info@bridgebytradings.co.uk</div> -->
