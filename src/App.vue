@@ -1,13 +1,19 @@
 <template>
   <div id="app">
     <header>
-      <img src="./assets/logo.png" alt="Logo" class="logo" />
-      <h1 class="title">Bridgeby Tradings Ltd</h1>
+      <div class="title">
+        <img src="./assets/logo.png" alt="Logo" class="logo" />
+        <h1 style="margin: 0;">Bridgeby Tradings Ltd</h1>
+      </div>
       <div>
-        <h3>Established 2023</h3>
+        <h3 style="margin: 0.5rem;">Established 2023</h3>
       </div>
     </header>
     <div class="container">
+      <div class="about">
+        <p>Bridgeby Tradings Ltd is a holding company established in 2023 that deals primarily in the building and running of e-commerce sites. It also deals with physical sales in the form of pop-up shops in the London (UK) area.</p>
+      </div>
+    
       <div class="main">
         <hr class="divider" />
         <div>
@@ -16,18 +22,20 @@
               <img src="./assets/image.jpg" alt="Image" class="image" />
             </div>
             <div class="text-div">
-              <p>Bridgeby Tradings Ltd is a holding company established in 2023 that deals primarily in the building and running of e-commerce sites.</p>
+              <p>Bridgeby Tradings Ltd is currently seeking suppliers of</p>
+              <ul>
+                <li>Musical instruments and accessories</li>
+                <li></li>
+              </ul>
             </div>
           </div>
           <hr class="divider" />
           <div style="text-align: center;">
-            
-                <address> 
-                    <a href="mailto:info@bridgebytradings.co.uk" class="contact">Contact
-                        <img src="./assets/email.png" class="email-icon">
-                    </a>
-                </address>
-            
+              <address> 
+                  <a href="mailto:info@bridgebytradings.co.uk" class="contact">Contact
+                      <img src="./assets/email.png" class="email-icon">
+                  </a>
+              </address>
           </div>
         </div>
       </div>
@@ -52,6 +60,7 @@ export default {
 
 header {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   background-color: #f1f1f1;
@@ -63,9 +72,17 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: calc(100vh - 120px);
+  flex-direction: column;
+  height: calc(100% - 120px);
   width: 90%;
   margin: 0 auto;
+}
+
+.about {
+  width: 70%;
+  text-align: center;
+  margin: 2rem;
+  color: #fff;
 }
 
 .main {
@@ -79,7 +96,9 @@ header {
 }
 
 .title {
-  font-size: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .divider {
@@ -134,6 +153,9 @@ header {
   }
   .text-div {
     margin-top: 20px;
+  }
+  .title {
+    flex-direction: column;
   }
 }
 </style>
