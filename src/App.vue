@@ -38,7 +38,7 @@
                   <p>Contact</p>
                     <div class="email-link">
                       <img src="./assets/email.png" class="email-icon">
-                      <div> info@bridgebytradings.co.uk</div>
+                      <!-- <div> info@bridgebytradings.co.uk</div> -->
                     </div>
                 </a>
             </address>
